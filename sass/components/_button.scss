@@ -14,6 +14,11 @@
       &:hover {
           transform: translateY(-.3rem);
           box-shadow: 0 1.5rem 3rem rgba($color-black,.2);
+
+          &::after {
+              transform: scaleX(1.4) scaleY(1.6);
+              opacity: 0;
+          }
       }
       
       &:active {
@@ -24,7 +29,20 @@
       &--white {
           background-color: $color-white;
           color: $color-grey-dark;
+
+          &::after {
+              background-color: $color-white;
+          }
       }
+
+      &--green {
+        background-color: $color-primary;
+        color: $color-grey-dark;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
       
       &::after {
           content: "";
@@ -101,9 +119,10 @@
        border-radius: 2rem;
 
    }
+   
 
    .btn1 {
-       color: #696969;
+       color: $color-black;
    }
    .btn2 {
        color: #696969;
@@ -136,3 +155,49 @@
    .btn1:hover::before, .btn2:hover::before{
        height: 180%;
    }
+
+   // 3rd button styling
+
+   .btn3 {
+    border: .1rem solid #A9A9A9;
+    background: none;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: .1rem;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+
+}
+
+.btn3 {
+    color: #696969;
+}
+
+.btn3:hover {
+    color: #fff;
+}
+
+.btn3::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: $color-primary;
+    z-index: -1;
+    transition: 0.3s;
+} 
+
+.btn3::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+   }
+
+.btn3:hover::before{
+       height: 180%;
+   }
+
