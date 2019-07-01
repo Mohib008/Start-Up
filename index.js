@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
 
-
-app.get("/", (req, res) => {
-    res.send("Server is Running!");
-});
 app.set("view engine", "ejs");
+app.get("/home", (req, res) => {
+    res.render("home");
+});
+
 app.use(express.static(__dirname + "/public"));
 app.use(express.static(__dirname + "/views"));
 app.use(express.static(__dirname + "/css"));
