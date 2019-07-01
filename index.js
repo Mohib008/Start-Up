@@ -23,6 +23,6 @@ app.use(express.static(__dirname + "/sass"));
 app.use(express.static(__dirname + "/img"));
 
 
-app.listen(process.env.PORT || 8080, () => {
-    console.log("Server is Running on Port 8080");
+app.listen(process.env.PORT || 5000, () => {
+    console.log("Server is Running on Port 5000");
 });
