@@ -1,15 +1,5 @@
 const express = require("express");
 const app = express();
-const mongoose = require("mongoose");
-
-mongoose.connect("mongodb+srv://Arsala:<Mohibml1>@cluster0-vu6xr.mongodb.net/test?retryWrites=true&w=majority", {
-    useNewUrlParser: true,
-    useCreateIndex: true
-}).then( () => {
-    console.log("connected to DB");
-}).catch(err => {
-    console.log("ERR:", err.message);
-});
 
 
 app.get("/", (req, res) => {
@@ -23,6 +13,6 @@ app.use(express.static(__dirname + "/sass"));
 app.use(express.static(__dirname + "/img"));
 
 
-app.listen(process.env.PORT || 5000, () => {
-    console.log("Server is Running on Port 5000");
+app.listen(process.env.PORT || 3000, () => {
+    console.log("Server is Running on Port 3000");
 });
