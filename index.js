@@ -7,8 +7,8 @@ app.get("/", (req, res) => {
 });
 app.set("view engine", "ejs");
 
-app.use(express.static(__dirname + "/css"));
-app.use(express.static(__dirname + "/img"));
+app.use(express.static(__dirname + "css"));
+app.use(express.static(__dirname + "img"));
 app.use(express.static(__dirname + "/sass"));
 app.use(express.static(__dirname + "/views"));
 
