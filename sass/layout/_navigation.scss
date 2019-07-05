@@ -24,7 +24,7 @@
       position:  fixed;
       top: 6.5rem;
       right: 6.5rem;
-      background-image: radial-gradient($color-primary-light, $color-primary-dark);
+      background-image: radial-gradient(#FA8072, #DC143C);
       z-index: 1000;
       transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
@@ -118,7 +118,7 @@
           transition: all .2s;
       }
 
-      &::before { top: -.8rem; }
+      &::before { top: -.8rem; }  //transform-origin: right;
       &::after  { top: .8rem; }
   }
 
@@ -136,12 +136,12 @@
 
   &__checkbox:checked + &__button &__icon::before {
       top: 0;
-    transform: rotate(45deg);
+    transform: rotate(135deg);
   }
 
   &__checkbox:checked + &__button &__icon::after {
       top: 0;
-    transform: rotate(-45deg);
-    
+    transform: rotate(-135deg);
+
   }
 }
