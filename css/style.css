@@ -549,6 +549,9 @@ body {
   border-bottom: 3px solid transparent;
   width: 70%;
   display: block; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -572,6 +575,10 @@ body {
 .form__radio-group {
   width: 45%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .form__radio-input {
   display: none; }
@@ -696,8 +703,8 @@ body {
   @media (max-width: 56.25em) {
     .story {
       width: 100%;
-      padding: 4rem;
-      padding-left: 7rem; } }
+      padding: 3rem;
+      padding-left: 5rem; } }
   @media (max-width: 37.5em) {
     .story {
       transform: skewX(0); } }
@@ -725,7 +732,7 @@ body {
       .story__text {
         transform: skewX(0); } }
   .story__caption {
-    position: absolute;
+    position: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 20%);
@@ -758,7 +765,8 @@ body {
     padding-bottom: 8rem; }
     @media (max-width: 56.25em) {
       .footer__logo-box {
-        margin-bottom: 4rem; } }
+        margin-bottom: 4rem;
+        padding: 5rem 3rem; } }
   .footer__logo {
     width: 14rem;
     height: auto; }
@@ -830,10 +838,10 @@ body {
     @media (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
-    @media (max-width: 56.25em) {
-      .row:not(:last-child) {
-        max-width: 50rem;
-        padding: 0 3rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -895,11 +903,12 @@ body {
   right: 6.5rem;
   background-image: radial-gradient(#00B765, #55c57a);
   z-index: 1000;
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  padding: 0; }
   @media (max-width: 56.25em) {
     .navigation__background {
-      top: 4.5rem;
-      right: 4.5rem; } }
+      top: 4rem;
+      right: 2rem; } }
   @media (max-width: 37.5em) {
     .navigation__background {
       top: 3.5rem;
@@ -996,7 +1005,7 @@ body {
   margin-top: -20vh; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 20rem 0; } }
+      padding: 20rem 5rem; } }
 
 .section-features {
   padding: 20rem 0;

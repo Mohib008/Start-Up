@@ -11,8 +11,8 @@
 
     @include respond(tab-port) {
         width: 100%;
-        padding: 4rem;
-        padding-left: 7rem;
+        padding: 3rem;
+        padding-left: 5rem;
     }
 
     @include respond(phone) {
@@ -51,7 +51,7 @@
     }
 
     &__caption {
-        position: absolute;
+        position: center;
         top: 50%;
         left: 50%;
         transform: translate(-50%, 20%);
