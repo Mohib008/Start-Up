@@ -60,18 +60,42 @@
     rgba($color-white, .9) 50%,
     transparent 50%),
      url(../img/toronto4.jpg);
-    background-size: 100%;
+    background-size: cover;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 1);
     display: block;
 
-    height: 50rem;
+    @include respond(tab-land) {
+        background-image: linear-gradient(105deg, 
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 65%,
+        transparent 65%),
+         url(../img/toronto4.jpg);
+         background-size: cover;
+    }
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(to right, 
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 100%),
+         url(../img/toronto4.jpg);
+    }
 
     &__form {
         width: 50%;
         padding: 6rem;
+
+        @include respond(tab-land) {
+            width: 65%;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
     }
 }
+
+
 
 
 
