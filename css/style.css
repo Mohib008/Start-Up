@@ -60,11 +60,11 @@ html {
       font-size: 50%; } }
   @media (max-width: 112.5em) {
     html {
-      font-size: 75%; } }
+      font-size: 62.5%; } }
 
 body {
   box-sizing: border-box;
-  padding: 3rem; }
+  padding: 1rem; }
   @media (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -768,7 +768,7 @@ body {
         margin-bottom: 4rem;
         padding: 5rem 3rem; } }
   .footer__logo {
-    width: 14rem;
+    width: 10rem;
     height: auto; }
   .footer__navigation {
     border-top: 1px solid #777;
@@ -819,10 +819,10 @@ body {
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
-    top: 4rem;
-    left: 4rem; }
+    top: 1.5rem;
+    left: 1.5rem; }
   .header__logo {
-    height: 5rem; }
+    height: 10rem; }
   .header__text-box {
     position: absolute;
     top: 40%;

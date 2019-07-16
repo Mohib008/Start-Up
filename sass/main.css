@@ -135,14 +135,14 @@ html {
 
 @media (max-width: 112.5em) {
   html {
-    font-size: 75%;
+    font-size: 62.5%;
   }
 }
 
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 @media (max-width: 56.25em) {
@@ -1206,7 +1206,7 @@ body {
 }
 
 .footer__logo {
-  width: 14rem;
+  width: 10rem;
   height: auto;
 }
 
@@ -1287,12 +1287,12 @@ body {
 
 .header__logo-box {
   position: absolute;
-  top: 4rem;
-  left: 4rem;
+  top: 1.5rem;
+  left: 1.5rem;
 }
 
 .header__logo {
-  height: 5rem;
+  height: 10rem;
 }
 
 .header__text-box {
